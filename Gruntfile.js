@@ -350,7 +350,7 @@ htmlmin: {
       pages: {
         options: {
           remote: 'git@github.com:nhduy1985/nhduy1985.github.io.git',
-          branch: 'gh-pages'
+          branch: 'master'
         }
       }
     }
