@@ -194,11 +194,11 @@ livereload: {
 },
 
     // The following *-min tasks produce minified files in the dist folder
-    cssmin: {
-      options: {
-        root: '<%= yeoman.app %>'
-      }
-    },
+    //cssmin: {
+    //  options: {
+    //    root: '<%= yeoman.app %>'
+    //  }
+    //},
 
     imagemin: {
       dist: {
@@ -272,23 +272,28 @@ htmlmin: {
           '*.{ico,png,txt}',
           '.htaccess',
           '*.html',
-        'views/{,*/}*.html',
-      'images/{,*/}*.{webp}',
-      'fonts/*'
-      ]
-    }, {
+          'views/{,*/}*.html',
+        'images/{,*/}*.{webp}',
+        'fonts/*'
+        ]
+      }, {
+        expand: true,
+        cwd: '.tmp/images',
+        dest: '<%= yeoman.dist %>/images',
+        src: ['generated/*']
+      },{
+        expand: true,
+        cwd: '<%= yeoman.app %>/bower_components/bootstrap/dist',
+        src: 'fonts/*',
+        dest: '<%= yeoman.dist %>/fonts',
+      }]
+    },
+    styles: {
       expand: true,
-      cwd: '.tmp/images',
-      dest: '<%= yeoman.dist %>/images',
-      src: ['generated/*']
-    }]
-  },
-  styles: {
-    expand: true,
-    cwd: '<%= yeoman.app %>/styles',
-    dest: '.tmp/styles/',
-  src: '{,*/}*.css'
-}
+      cwd: '<%= yeoman.app %>/styles',
+      dest: '.tmp/styles/',
+    src: '{,*/}*.css'
+  }
 },
 
     // Run some tasks in parallel to speed up the build process
@@ -399,13 +404,18 @@ grunt.registerTask('build', [
   'uglify',
   'rev',
   'usemin',
-  'htmlmin',
-  'buildcontrol'
+  'htmlmin'
   ]);
 
 grunt.registerTask('default', [
   'newer:jshint',
   'test',
   'build'
+  ]);
+grunt.registerTask('release', [
+  'newer:jshint',
+  'test',
+  'build',
+  'buildcontrol'
   ]);
 };
