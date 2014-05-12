@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('redmineReportDashboardApp', [
+  .module('profileApp', [
     'ngCookies',
     'ngResource',
     'ngSanitize',
@@ -11,6 +11,12 @@ angular
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
+        controller: 'MainCtrl'
+      })
+      .when('/pages/:slug', {
+        templateUrl: function(params) {
+          return 'views/pages/' + params.slug + '.html';
+        },
         controller: 'MainCtrl'
       })
       .otherwise({

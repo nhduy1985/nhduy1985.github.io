@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('profileApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('PageCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

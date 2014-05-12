@@ -1,0 +1,11 @@
+<div class="container" ng-controller="MenuCtrl">
+	<div class="dropdown">
+		<button type="button" class="navbar-toggle" data-toggle="dropdown"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+		<!-- <a data-toggle="dropdown" href="#">Dropdown trigger</a> -->
+		<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+			<li data-ng-repeat="item in menus">
+			  <a ng-class="{active: isActive(item)}" href="#{{item.href}}" id="{{item.id}}" ng-click="changePage(item)">{{item.title}}</a>
+			</li>
+		</ul>
+	</div>
+</div>
