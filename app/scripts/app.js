@@ -13,6 +13,12 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/pages/portfolio', {
+        templateUrl: function(params) {
+          return 'views/pages/portfolio.html';
+        },
+        controller: 'MainCtrl'
+      })
       .when('/pages/:slug', {
         templateUrl: function(params) {
           return 'views/pages/' + params.slug + '.html';
@@ -22,4 +28,11 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+  })
+  .filter('newlines', function () {
+    return function(text) {
+      if(text)
+          return text.replace(/\n/g, '<br/>');
+        return '';
+    }
   });

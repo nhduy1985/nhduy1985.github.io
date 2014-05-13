@@ -18,6 +18,10 @@
     <!-- build:css({.tmp,app}) styles/main.css -->
     <link rel="stylesheet" href="css/main.css">
     <!-- endbuild -->
+    <script type="text/javascript" src="http://platform.linkedin.com/in.js">
+      api_key: 754et151ai1iue
+      authorize: true
+    </script>
   </head>
   <body ng-app="profileApp" class="theme-invert">
     <!--[if lt IE 7]>
@@ -25,7 +29,7 @@
     <![endif]-->
     <nav class="mainmenu" ng-include src="'views/menu.html'"></nav>
     <!-- Add your site or application content here -->
-    <div class="container fade in" ng-view=""></div>
+    <div class="container" ng-view=""></div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -54,12 +58,13 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/menu.js"></script>
-        <script src="scripts/controllers/pages.js"></script>
-        <!-- endbuild -->
+    
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/menu.js"></script>
+    <script src="scripts/controllers/pages.js"></script>
+    <script src="scripts/controllers/portfolio.js"></script>
+    <!-- endbuild -->    
 </body>
 </html>

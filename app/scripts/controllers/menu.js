@@ -6,7 +6,8 @@ angular.module('profileApp')
 		{title:"Home", href:"/", id:"home-item"},
 		{title:"About me", href:"/pages/about"},
 		{title:"Works", href:"/pages/works"},
-		{title:"Contact", href:"/pages/contact"}
+		{title:"Contact", href:"/pages/contact"},
+		{title:"Portfolio", href:"/pages/portfolio"}
 	];
 	$scope.isActive = function(item) {
       if (item.href == $location.path()) {

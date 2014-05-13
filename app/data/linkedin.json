@@ -1,0 +1,327 @@
+{
+    "firstName": "Duy",
+    "id": "HTbxYuOCSE",
+    "lastName": "Tran",
+    "pictureUrl": "http://m.c.lnkd.licdn.com/mpr/mprx/0__NWrbMTpVEL9OXZs31JfbR1iVICcOXds39g7bRlpLSnF38OVftMpdUL-q6GHgiHnCBwaeyiEzNQ0",
+    "positions": {
+        "_total": 6,
+        "values": [
+            {
+                "company": {
+                    "id": 2818642,
+                    "industry": "Information Technology and Services",
+                    "name": "Likipe Digital AB",
+                    "size": "11-50 employees",
+                    "type": "Partnership"
+                },
+                "id": 442388655,
+                "isCurrent": true,
+                "startDate": {
+                    "month": 8,
+                    "year": 2013
+                },
+                "summary": "- Projects management\n- Technical support for all projects with variant languages (PHP, Javascript...)\n- Trainer for courses: Wordpress, Magento, HTML5, Symfony2...\n- Seminars: Pair-programming, MongoDB, PHP Design Patterns",
+                "title": "Technical Manager"
+            },
+            {
+                "company": {
+                    "id": 2818642,
+                    "industry": "Information Technology and Services",
+                    "name": "Likipe Digital AB",
+                    "size": "11-50 employees",
+                    "type": "Partnership"
+                },
+                "endDate": {
+                    "month": 8,
+                    "year": 2013
+                },
+                "id": 442388562,
+                "isCurrent": false,
+                "startDate": {
+                    "month": 3,
+                    "year": 2013
+                },
+                "summary": "- Support Manager for all issues related to technical\n- Analyzed projects\n- Propose solutions\n- Co-ordination between domestic developers and foreign managers",
+                "title": "Assistant Technical Manager"
+            },
+            {
+                "company": {
+                    "id": 2818642,
+                    "industry": "Information Technology and Services",
+                    "name": "Likipe Digital AB",
+                    "size": "11-50 employees",
+                    "type": "Partnership"
+                },
+                "endDate": {
+                    "month": 2,
+                    "year": 2013
+                },
+                "id": 335329718,
+                "isCurrent": false,
+                "startDate": {
+                    "month": 1,
+                    "year": 2010
+                },
+                "summary": "- Lead a group of developers to work on projects\n- Learn and train new technical for Symfony and MongoDB\n- Develop apps with PhoneGap and SenchaTouch\n- Projects: BI, Myshowroom, Adserver, SDK, SenchaTouch apps...\n- Co-developer: MyCareFlow...",
+                "title": "Team Leader"
+            },
+            {
+                "company": {
+                    "industry": "Computer Software",
+                    "name": "Divine Word College"
+                },
+                "endDate": {
+                    "month": 9,
+                    "year": 2010
+                },
+                "id": 442389770,
+                "isCurrent": false,
+                "startDate": {
+                    "month": 2,
+                    "year": 2010
+                },
+                "summary": "- Worked under scholarship program as an assistant for college’s computer labs.\n- Took care of more than 100 computers in 3 labs as well as the network connection in this school. Also helped the IT department to work on school’s websites.\n- Working in the college gave me a lot of advantages in learning English.",
+                "title": "Computer Lab Assistant"
+            },
+            {
+                "company": {
+                    "industry": "Computer Software",
+                    "name": "CyberVN"
+                },
+                "endDate": {
+                    "month": 1,
+                    "year": 2010
+                },
+                "id": 442389436,
+                "isCurrent": false,
+                "startDate": {
+                    "month": 1,
+                    "year": 2009
+                },
+                "summary": "- Worked under pressure as a project manager in one of the biggest city in USA. \n- Often met local customers in order to get requirements, then planed the project, communicated with Vietnamese developers, managed the project, and tested. \n- Experienced in many languages (.NET, Java…) and software (CodeSmith, Blackberry, MS Project…).",
+                "title": "Junior Project Manager"
+            },
+            {
+                "company": {
+                    "id": 157355,
+                    "industry": "Computer Games",
+                    "name": "Gameloft",
+                    "size": "1001-5000 employees",
+                    "ticker": "FR0000079600",
+                    "type": "Public Company"
+                },
+                "endDate": {
+                    "month": 1,
+                    "year": 2008
+                },
+                "id": 442389113,
+                "isCurrent": false,
+                "startDate": {
+                    "month": 1,
+                    "year": 2007
+                },
+                "summary": "- Worked as a developer in an international team where the co-workers come from France, Ukraine…\n- Created, managed, and controlled many mini-websites for mobile devices. PHP is the major language. Experienced in e-Commerce system.\n- Co-operated HR application which helps local offices to manage Human Resource Processes.",
+                "title": "PHP Developer"
+            }
+        ]
+    },
+    "projects": {
+        "_total": 10,
+        "values": [
+            {
+                "description": "- Describe: an PHP application to manage the portfolio for Chorus usages. It is the data-core for all other applications usage for the whole Chorus system\n- Framework: Symfony 2.2 + MongoDB\n- HTML5, CSS3, and JQuery, SASS, PHPUnit",
+                "id": 28,
+                "name": "BI - Portfolio"
+            },
+            {
+                "description": "- Description: a cross-platform app for restaurant to present their dishes for users\n- Framework: Phonegap + SenchaTouch\n- Language: javascript MVC\n- Others: Slim framework for Restful API",
+                "id": 30,
+                "name": "Thaisilk App"
+            },
+            {
+                "description": "- Description: an Ecommerce website built on Symfony 2.3 and MongoDB with Apptus\n- Framework: Symfony 2.3, MongoDB, Apptus\n- Languages: PHP, Javascript\n- Postion: Project Manager and Coordinator",
+                "id": 32,
+                "name": "Pet24 Ecommerce"
+            },
+            {
+                "description": "- Description: A CMS to show APIs\n- Framework: Wordpress, Symfony 2.3, MongoDB\n- Position: Leader and PM",
+                "id": 34,
+                "name": "SDK"
+            },
+            {
+                "description": "- Description: An extension to help magento site sync products detail from Visma system\n- Framework: Magento, SOAP",
+                "id": 36,
+                "name": "Megagastromi - VISMA Connection"
+            },
+            {
+                "description": "- Description: a Time Management tool for projects (internal usage)\n- Framework: Backbones, Symfony2\n- Position: technical support for developing new features (Customer and Task)",
+                "id": 38,
+                "name": "LikTime"
+            },
+            {
+                "description": "- Describe: Manage iterative Videos CV/Resume between employer and employee. Multiple devices support.\n- Framework: Symfony, Adobe Media Server, NodeJS, iOS, Android.\n- Contribution: project startup; Adobe Media Server development; technical assistant; coordinator multiple os teams.\n",
+                "id": 65,
+                "name": "VideoCV"
+            },
+            {
+                "description": "This is a RubyOnRails-based system - Redmine that helps for Manage Projects for internal company.\nRoles:\n- Develop new features: custom calendar, custom field for project.\n- Fix bugs for 3rd-party plugins",
+                "id": 68,
+                "name": "Internal Project Management System"
+            },
+            {
+                "description": "Describe:\n- Company's workflow training for LiVi office.\n- Technical training such as Gitflow, Server issues, RESTful webservice, Magento...\n- Meeting with developers.\nRoles:\n- Trainer\n- Technical Manager",
+                "id": 70,
+                "name": "Workflow Training - Kolkata, India"
+            },
+            {
+                "description": "- Akeneo http://www.akeneo.com/ is Product Information Management software based on Symfony2 platform.\n- Likipe's PIM supports for Magento with customized features.\nRoles:\n- Initial setup project.\n- Teamleader.\n ",
+                "id": 73,
+                "name": "PIM for Magento"
+            }
+        ]
+    },
+    "publicProfileUrl": "http://www.linkedin.com/pub/duy-tran/60/101/7bb",
+    "skills": {
+        "_total": 23,
+        "values": [
+            {
+                "id": 1,
+                "skill": {
+                    "name": "Web Development"
+                }
+            },
+            {
+                "id": 2,
+                "skill": {
+                    "name": "PHP"
+                }
+            },
+            {
+                "id": 7,
+                "skill": {
+                    "name": "MongoDB"
+                }
+            },
+            {
+                "id": 8,
+                "skill": {
+                    "name": "jQuery"
+                }
+            },
+            {
+                "id": 15,
+                "skill": {
+                    "name": "Symfony"
+                }
+            },
+            {
+                "id": 43,
+                "skill": {
+                    "name": "HTML 5"
+                }
+            },
+            {
+                "id": 48,
+                "skill": {
+                    "name": "Leadership"
+                }
+            },
+            {
+                "id": 49,
+                "skill": {
+                    "name": "Problem Solving"
+                }
+            },
+            {
+                "id": 50,
+                "skill": {
+                    "name": "Analysis"
+                }
+            },
+            {
+                "id": 51,
+                "skill": {
+                    "name": "Symfony2"
+                }
+            },
+            {
+                "id": 52,
+                "skill": {
+                    "name": "Zend"
+                }
+            },
+            {
+                "id": 53,
+                "skill": {
+                    "name": "Sencha Touch"
+                }
+            },
+            {
+                "id": 54,
+                "skill": {
+                    "name": "Phonegap"
+                }
+            },
+            {
+                "id": 55,
+                "skill": {
+                    "name": "Bootstrap"
+                }
+            },
+            {
+                "id": 56,
+                "skill": {
+                    "name": "LESS"
+                }
+            },
+            {
+                "id": 57,
+                "skill": {
+                    "name": "COMPASS"
+                }
+            },
+            {
+                "id": 58,
+                "skill": {
+                    "name": "Magento"
+                }
+            },
+            {
+                "id": 59,
+                "skill": {
+                    "name": "HTML5"
+                }
+            },
+            {
+                "id": 61,
+                "skill": {
+                    "name": "PhoneGap"
+                }
+            },
+            {
+                "id": 62,
+                "skill": {
+                    "name": "Sencha"
+                }
+            },
+            {
+                "id": 63,
+                "skill": {
+                    "name": "Compass"
+                }
+            },
+            {
+                "id": 64,
+                "skill": {
+                    "name": "Design Patterns"
+                }
+            },
+            {
+                "id": 75,
+                "skill": {
+                    "name": "WordPress"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,12 @@
+<li ng-repeat="project in projects | orderBy:'-id'" ng-class-odd="''" ng-class-even="'timeline-inverted'">
+  <div class="timeline-badge"><i class="glyphicon glyphicon-book"></i></div>
+  <div class="timeline-panel thumbnail">
+    <div class="timeline-heading">
+      <h4 class="timeline-title">{{project.name}}</h4>
+      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> via Linkedin</small></p>
+    </div>
+    <div class="timeline-body">
+      <p ng-bind-html="project.description|newlines"></p>
+    </div>
+  </div>
+</li>
