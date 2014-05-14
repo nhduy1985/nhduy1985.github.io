@@ -365,6 +365,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 }
 
 
+
 #portfolio .page-content {
 	margin-top: 135px;
 }
@@ -396,10 +397,10 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
         bottom: 0;
         position: absolute;
         content: " ";
-        width: 3px;
-        background-color: #eeeeee;
+        width: 6px;
+        background-color: rgba(255,255,255,.8);
         left: 50%;
-        margin-left: -1.5px;
+        margin-left: -5px;
     }
 
     .timeline > li {
@@ -435,8 +436,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
             padding: 20px;
             position: relative;
             -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-            background: 
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);            
         }
 
             .timeline > li > .timeline-panel:before {
@@ -522,7 +522,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 
 .timeline-title {
     margin-top: 0;
-    color: inherit;
+    color: #808080;
 }
 
 .timeline-body > p,
@@ -591,18 +591,6 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 
     .timeline-centered:after {
         clear: both;
-    }
-
-    .timeline-centered:before {
-        content: '';
-        position: absolute;
-        display: block;
-        width: 4px;
-        background: #f5f5f6;
-        left: 50%;
-        top: 20px;
-        bottom: 20px;
-        margin-left: -4px;
     }
 
     .timeline-centered .timeline-entry {
@@ -732,7 +720,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
                 text-align: center;
                 -moz-box-shadow: 0 0 0 5px #f5f5f6;
                 -webkit-box-shadow: 0 0 0 5px #f5f5f6;
-                box-shadow: 0 0 0 5px #f5f5f6;
+                box-shadow: 0 0 0 5px rgba(255,255,255,.8);
                 line-height: 40px;
                 font-size: 15px;
                 float: left;
@@ -823,7 +811,9 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
                         -ms-filter: alpha(opacity=60);
                         filter: alpha(opacity=60);
                     }
-
+#projects .timeline-centered .timeline-entry {
+	margin-bottom: -20px;
+}
 
 /* THEMEING WITH DIFFERENT BACKGROUND */
 html.theme1 {
@@ -840,4 +830,7 @@ html.theme4 {
 }
 html.theme5 {
 	background-image: url('../images/body5.jpg');
+}
+html.theme6 {
+	background-image: url('../images/php.jpg');
 }

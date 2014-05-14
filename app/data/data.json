@@ -1,0 +1,21 @@
+{
+	"companies": [
+		{
+			"name": "Divine Word College",
+			"url": "http://www.dwci.edu"
+		},
+		{
+			"name": "CyberVN",
+			"url": "http://www.cybervn.com/"
+		},
+		{
+			"name": "Likipe Digital AB",
+			"url": "http://likipe.com"
+		}		,
+		{
+			"name": "Gameloft",
+			"url": "http://gameloft.com"
+		}
+	]
+
+}

@@ -7,11 +7,11 @@
                     <span ng-show="position.endDate">To {{position.endDate.month}}/{{position.endDate.year}}</span>
                 </time>
                 <div class="timeline-icon ng-class: {'bg-secondary': $first, 'bg-success': !$first}">
-                    <i class="glyphicon ng-class: {'glyphicon-star':$first}"></i>
+                    <i class="glyphicon ng-class: {'glyphicon-star':$first, 'glyphicon-pencil': !$first}"></i>
                 </div>
                 <div class="timeline-label">
-                    <h4 class="timeline-title">{{position.title}} <a data-toggle="tooltip" data-placement="right" title="Tooltip on right"><small class="text-muted">at <i class="glyphicon glyphicon-link"></i> {{position.company.name}}</small></a></h4>
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> via Linkedin</small></p>
+                    <h4 class="timeline-title">{{position.title}} <a href="{{getCompanyLink(position.company.name)}}" target="_blank"><small class="text-muted">at <i class="glyphicon glyphicon-link"></i>  {{position.company.name}} </small></a> </h4>
+                    <p><a href="{{linkedinPublicProfileUrl}}" target="_blank"><small class="text-muted"><i class="glyphicon glyphicon-time"></i>  via Linkedin</small></a></p>
                     <p ng-bind-html="position.summary|newlines"></p>
                 </div>
             </div>

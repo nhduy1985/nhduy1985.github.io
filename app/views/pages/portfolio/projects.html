@@ -1,12 +1,17 @@
-<li ng-repeat="project in projects | orderBy:'-id'" ng-class-odd="''" ng-class-even="'timeline-inverted'">
-  <div class="timeline-badge"><i class="glyphicon glyphicon-book"></i></div>
-  <div class="timeline-panel thumbnail">
-    <div class="timeline-heading">
-      <h4 class="timeline-title">{{project.name}}</h4>
-      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> via Linkedin</small></p>
+<div class="row">
+    <div class="timeline-centered">
+        <article ng-repeat="project in projects | orderBy:'-id'" ng-class-odd="'left-aligned'" ng-class-even="''" class="timeline-entry">
+            <div class="timeline-entry-inner">
+                <div class="timeline-icon ng-class: {'bg-secondary': $first, 'bg-info': !$first}">
+                    <i class="glyphicon ng-class: {'glyphicon-star':$first, 'glyphicon-book': !$first}"></i>
+                </div>
+                <div class="timeline-label">
+                    <h4 class="timeline-title">{{project.name}}</h4>
+                    <p><a href="{{linkedinPublicProfileUrl}}" target="_blank"><small class="text-muted"><i class="glyphicon glyphicon-time"></i>  via Linkedin</small></a></p>
+                    <p ng-bind-html="project.description|newlines"></p>
+                </div>
+            </div>
+        </article>
     </div>
-    <div class="timeline-body">
-      <p ng-bind-html="project.description|newlines"></p>
-    </div>
-  </div>
-</li>
+</div>
+</div>
