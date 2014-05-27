@@ -16,6 +16,94 @@
 			"name": "Gameloft",
 			"url": "http://gameloft.com"
 		}
-	]
+	],
+
+	"technicals": {
+		"php": {
+			"icon": "icon-php",
+			"url": "http://php.net",
+			"order": 8,
+			"title": "PHP Programming Language"
+		},
+		"mongodb": {
+			"icon": "icon-database",
+			"url": "http://mongodb.org/",
+			"order": 2,
+			"title": "MongoDB Database"
+		},
+		"html5": {
+			"icon": "icon-html",
+			"url": "http://www.w3.org/TR/html5/",
+			"order": 9,
+			"title": "HTML5 Markup Language"
+		},
+		"sass": {
+			"icon": "icon-css",
+			"url": "http://sass-lang.com",
+			"order": 2,
+			"title": "Sass: Syntactically Awesome Style Sheets"
+		},
+		"phonegap": {
+			"icon": "icon-mobile-device",
+			"url": "http://phonegap.com/",
+			"order": 1,
+			"title": "Phonegap: HTML5 mobile application framework"
+		},
+		"senchatouch": {
+			"icon": "icon-mobile-device",
+			"url": "http://www.sencha.com/products/touch/",
+			"order": 2,
+			"title": "Sencha Touch Build Mobile Web Apps with HTML5"
+		},
+		"wordpress": {
+			"icon": "icon-php",
+			"url": "http://wordpress.com",
+			"order": 7,
+			"title": "Wordpress framework"
+		},
+		"javascript": {
+			"icon": "icon-javascript",
+			"url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+			"order": 10,
+			"title": "Javascript"
+		},
+		"mysql": {
+			"icon": "icon-mysql",
+			"url": "https://mysql.com",
+			"order": 5,
+			"title": "Mysql Database"
+		},
+		"magento": {
+			"icon": "icon-php",
+			"url": "http://magento.com",
+			"order": 2,
+			"title": "Magento: eCommerce Software & eCommerce Platform"
+		},
+		"pim": {
+			"icon": "icon-jetty",
+			"url": "http://www.akeneo.com",
+			"order": 2,
+			"title": "Akeneo: Product Information Management"
+		}
+	},
+
+	"projects": {
+		"28": {
+			"name": "BI Portfolio",
+			"tags": ["php","symfony","mongodb","html5","sass"]
+		},
+		"30": {
+			"name": "Thaisilk Restaurant",
+			"tags": ["phonegap","senchatouch","restful","wordpress"]
+		},
+		"32": {
+			"name": "Pet24",
+			"tags": ["php","symfony","mongodb","html5","apptus","javascript"]
+		},
+		"73": {
+			"name": "PIM for Magento",
+			"tags": ["php","symfony","mysql","magento","pim"]
+		}
+	}	
 
 }
