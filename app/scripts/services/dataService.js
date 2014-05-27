@@ -14,4 +14,4 @@ angular.module('profileApp')
 	      return promise;
 	    }
 	  };
-});
+  });

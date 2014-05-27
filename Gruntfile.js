@@ -189,8 +189,9 @@ module.exports = function (grunt) {
       html: ['<%= yeoman.dist %>/{,*/}*.html'],
       css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
       options: {
-        assetsDirs: ['<%= yeoman.dist %>']
-      }
+            dirs: ['<%= yeoman.dist %>'],
+            basedir: ['<%= yeoman.dist %>']
+        }
     },
 
     // The following *-min tasks produce minified files in the dist folder
@@ -273,9 +274,11 @@ module.exports = function (grunt) {
               '*.{ico,png,txt}',
               '.htaccess',
               '*.html',
+              'views/pages/{,*/}*.html',
               'views/{,*/}*.html',
               'images/{,*/}*.{webp}',
-              'fonts/*'
+              'fonts/*',
+              'data/*.json'
           ]},
           {
             expand: true,

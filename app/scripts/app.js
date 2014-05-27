@@ -14,7 +14,7 @@ angular
         controller: 'MainCtrl'
       })
       .when('/pages/portfolio', {
-        templateUrl: function(params) {
+        templateUrl: function() {
           return 'views/pages/portfolio.html';
         },
         controller: 'MainCtrl'
@@ -31,8 +31,9 @@ angular
   })
   .filter('newlines', function () {
     return function(text) {
-      if(text)
+      if (text) {
           return text.replace(/\n/g, '<br/>');
-        return '';
-    }
+      }
+      return '';
+    };
   });

@@ -20,7 +20,10 @@ body {
 	font-weight: normal;
 }
 
-
+h5 {
+    color: #4E4E4E;
+    font-weight: bold;
+}
 /********************************************************/
 /*                    Navigation bar                    */
 /********************************************************/
@@ -363,7 +366,9 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 .thumbnail .caption {
 	color: inherit;
 }
-
+.theme-invert h5 {
+    color: #4E4E4E;
+}
 
 
 #portfolio .page-content {
@@ -814,6 +819,10 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 #projects .timeline-centered .timeline-entry {
 	margin-bottom: -20px;
 }
+    #projects .tags a {
+        font-size: 49px;
+        color: #08526F;
+    }
 
 /* THEMEING WITH DIFFERENT BACKGROUND */
 html.theme1 {

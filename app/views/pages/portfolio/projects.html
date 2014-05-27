@@ -8,7 +8,14 @@
                 <div class="timeline-label">
                     <h4 class="timeline-title">{{project.name}}</h4>
                     <p><a href="{{linkedinPublicProfileUrl}}" target="_blank"><small class="text-muted"><i class="glyphicon glyphicon-time"></i>  via Linkedin</small></a></p>
-                    <p ng-bind-html="project.description|newlines"></p>
+                    <h5>Description:</h5>
+                    <p ng-bind-html="project.description|newlines"></p>                    
+                    <div class="tags" ng-show="project.tags">
+                        <h5>Skills:</h5>
+                        <span ng-repeat="tag in project.tags | orderBy: 'order'">
+                        <a target="_blank" href="{{tag.url}}" title="{{tag.title}}"><i class="{{tag.icon}}"></i></a>
+                        </span>
+                    </div>
                 </div>
             </div>
         </article>
