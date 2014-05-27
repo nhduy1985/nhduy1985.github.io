@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="timeline-centered">
+        <article ng-repeat="position in positions" ng-class-odd="''" ng-class-even="'left-aligned'" class="timeline-entry">
+            <div class="timeline-entry-inner">
+                <time class="timeline-time" datetime="2014-01-10T03:45">
+                    <span>From {{position.startDate.month}}/{{position.startDate.year}}</span>
+                    <span ng-show="position.endDate">To {{position.endDate.month}}/{{position.endDate.year}}</span>
+                </time>
+                <div class="timeline-icon ng-class: {'bg-secondary': $first, 'bg-success': !$first}">
+                    <i class="glyphicon ng-class: {'glyphicon-star':$first, 'glyphicon-pencil': !$first}"></i>
+                </div>
+                <div class="timeline-label">
+                    <h4 class="timeline-title">{{position.title}} <a href="{{getCompanyLink(position.company.name)}}" target="_blank"><small class="text-muted">at <i class="glyphicon glyphicon-link"></i>  {{position.company.name}} </small></a> </h4>
+                    <p><a href="{{linkedinPublicProfileUrl}}" target="_blank"><small class="text-muted"><i class="glyphicon glyphicon-time"></i>  via Linkedin</small></a></p>
+                    <p ng-bind-html="position.summary|newlines"></p>
+                </div>
+            </div>
+        </article>
+    </div>
+</div>
+</div>
