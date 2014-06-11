@@ -1,57 +1,12 @@
-<!-- Third (Works) section -->
-<section class="section" id="themes">
-  <div class="container">
-    
-    You need to login to Linkedin in order to view my profile
-    <script type="in/Login">Hello, <?js= firstName ?> <?js= lastName ?>.</script>
-    <h2 class="text-center title">More Themes</h2>
-    <p class="lead text-center">
-      Huge thank you to all people who publish<br>
-      their photos at <a href="http://unsplash.com">Unsplash</a>, thank you guys!
-    </p>
-    <div class="row">
-      <div class="col-sm-4 col-sm-offset-2">
-        <div class="thumbnail">
-          <img src="images/screenshots/sshot1.jpg" alt="">
-          <div class="caption">
-            <h3>Thumbnail label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="images/screenshots/sshot4.jpg" alt="">
-          <div class="caption">
-            <h3>Thumbnail label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-sm-offset-2">
-        <div class="thumbnail">
-          <img src="images/screenshots/sshot5.jpg" alt="">
-          <div class="caption">
-            <h3>Thumbnail label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="images/screenshots/sshot3.jpg" alt="">
-          <div class="caption">
-            <h3>Thumbnail label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-          </div>
-        </div>
-      </div>
-
+<div id="works" class="container" ng-controller="WorksCtrl">    
+    <div class="page-header">
+        <ul class="pull-right nav nav-pills">
+            <li class="subtitle active">My Github</li>
+        </ul>
     </div>
-
-  </div>
-</section>  
+    <div class="page-content row-fluid">
+     <div ac-chart="languagesChart.chartType" ac-data="languagesChart.data" ac-config="languagesChart.config" id='languagesChart' class='chart col-md-6' style="height:300px;"></div>
+     <div ac-chart="repositoriesChart.chartType" ac-data="repositoriesChart.data" ac-config="repositoriesChart.config" id='repositoriesChart' class='chart col-md-6' style="height:300px;"></div>
+    </div>
+    </div>
+</div>

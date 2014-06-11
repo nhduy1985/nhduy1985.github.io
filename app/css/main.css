@@ -1,3 +1,18 @@
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+  font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+display: inline-block;
+text-decoration: inherit;
+}
+
 html {
 	background:#505D6E url(../images/body1.jpg) no-repeat center center fixed; 
 	min-height:100%;
@@ -371,23 +386,23 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 }
 
 
-#portfolio .page-content {
+.page-content {
 	margin-top: 135px;
 }
-#portfolio .page-header {
+.page-header {
 	overflow: auto;
 	position: fixed;
 	right: 350px;
 	z-index: 20;
 }
-#portfolio .nav {
+.nav {
 	font-family: 'Wire One', Helvetica, Arial, sans-serif;
 }
-#portfolio .nav li {
+.nav li {
 	cursor: pointer;
 	margin: 0 20px;
 }
-#portfolio .nav li.active {
+.nav li.active {
 	font-weight: bold;
 }
 
@@ -823,6 +838,19 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
         font-size: 49px;
         color: #08526F;
     }
+    #projects .tags .glyphicon {
+        font-size: 42px;
+    }
+
+.timeline .highlight .timeline-label {
+    box-shadow: 5px 5px 24px #ee4749;
+}
+
+.timeline .glyphicon-thumbs-up {
+    font-size: 21px;
+    top: 5px;
+    left: 1px;
+}
 
 /* THEMEING WITH DIFFERENT BACKGROUND */
 html.theme1 {

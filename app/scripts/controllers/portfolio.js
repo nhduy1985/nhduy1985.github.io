@@ -11,13 +11,16 @@ angular.module('profileApp')
         $scope.getCompanyLink = function(companyName) {
             return _getCompanyLink(companyName,response);
         };
-        _mergeProjectTags(response);
+        _mergeProjectData(response);
     });
 
-    function _mergeProjectTags(data) {
+    function _mergeProjectData(data) {
         for (var i = 0; i < $scope.projects.length; i++) {
             var id = $scope.projects[i].id;
             if (data.projects[id] !== undefined) {
+                //Merge highlight
+                $scope.projects[i].highlight = data.projects[id].highlight || false;
+                //Merge tags
                 var tags = data.projects[id].tags;
                 $scope.projects[i].tags = [];
                 for (var j = 0; j < tags.length; j++) {

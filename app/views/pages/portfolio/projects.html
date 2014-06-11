@@ -1,9 +1,9 @@
 <div class="row">
     <div class="timeline-centered">
         <article ng-repeat="project in projects | orderBy:'-id'" ng-class-odd="'left-aligned'" ng-class-even="''" class="timeline-entry">
-            <div class="timeline-entry-inner">
-                <div class="timeline-icon ng-class: {'bg-secondary': $first, 'bg-info': !$first}">
-                    <i class="glyphicon ng-class: {'glyphicon-star':$first, 'glyphicon-book': !$first}"></i>
+            <div class="timeline-entry-inner" ng-class="{'highlight':project.highlight}">
+                <div class="timeline-icon ng-class: {'bg-secondary': project.highlight, 'bg-info': !project.highlight}">
+                    <i class="glyphicon ng-class: {'glyphicon-thumbs-up':project.highlight, 'glyphicon-book': !project.highlight}"></i>
                 </div>
                 <div class="timeline-label">
                     <h4 class="timeline-title">{{project.name}}</h4>

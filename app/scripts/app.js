@@ -5,7 +5,8 @@ angular
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngRoute'
+    'ngRoute',
+    'angularCharts'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -23,6 +24,10 @@ angular
         templateUrl: function(params) {
           return 'views/pages/' + params.slug + '.html';
         },
+        controller: 'MainCtrl'
+      })
+      .when('/works', {
+        templateUrl: 'views/pages/works.html',
         controller: 'MainCtrl'
       })
       .otherwise({
