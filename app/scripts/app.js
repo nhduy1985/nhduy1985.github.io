@@ -6,7 +6,8 @@ angular
     'ngResource',
     'ngSanitize',
     'ngRoute',
-    'angularCharts'
+    'angularCharts',
+    'firebase'
   ])
   .config(function ($routeProvider) {
     $routeProvider

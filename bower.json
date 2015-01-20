@@ -11,7 +11,9 @@
     "angular-cookies": "1.2.15",
     "angular-sanitize": "1.2.15",
     "angular-route": "1.2.15",
-    "angular-charts":"*"
+    "angular-charts":"*",
+    "firebase":"*",
+    "angularfire":"*"
   },
   "devDependencies": {
     "angular-mocks": "1.2.15",

@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('profileApp')
-.controller('PortfolioCtrl', function ($scope,$location,linkedinService,dataService) {
+.controller('PortfolioCtrl', function ($scope,$location,linkedinService,dataService,$firebase) {
     linkedinService().success(function(response) {
         $scope.projects = response.projects.values;
         $scope.positions = response.positions.values;
@@ -44,4 +44,9 @@ angular.module('profileApp')
     }
 
     $scope.activeTab = 'projects';
+
+    var ref = new Firebase("https://vivid-torch-9106.firebaseio.com/messages");
+    var sync = $firebase(ref);
+    $scope.test = sync.$asArray();
+    console.log($scope.test)
 });

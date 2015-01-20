@@ -3,7 +3,7 @@
 describe('Controller: MainCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('redmineReportDashboardApp'));
+  beforeEach(module('profileApp'));
 
   var MainCtrl,
     scope;
