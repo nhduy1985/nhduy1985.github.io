@@ -32,6 +32,7 @@
     "karma-ng-html2js-preprocessor": "^0.1.0",
     "karma-jasmine": "^0.1.5",
     "karma-chrome-launcher": "^0.1.3",
+    "karma-phantomjs-launcher":"*",
     "grunt-build-control": "^0.1.3"
   },
   "engines": {
